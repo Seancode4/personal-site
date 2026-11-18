@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sean Noh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #f3f0e9;
+        --fg: #1c1b19;
+        --muted: #7d786f;
+        --sans:
+          "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+          sans-serif;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: var(--sans);
+        font-size: 15px;
+        line-height: 1.5;
+        color: var(--fg);
+        background: var(--bg);
+        -webkit-font-smoothing: antialiased;
+        padding: 48px;
+      }
+      main {
+        width: 100%;
+        max-width: 576px;
+      }
+
+      h1 {
+        font-size: 15px;
+        font-weight: 500;
+      }
+      header {
+        margin-bottom: 48px;
+      }
+      header h1,
+      .bio {
+        display: inline;
+      }
+      .bio {
+        margin-left: 6px;
+        color: var(--muted);
+      }
+      h2 {
+        font-size: 15px;
+        font-weight: 400;
+        color: var(--muted);
+        margin-bottom: 8px;
+      }
+      section + section {
+        margin-top: 32px;
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        padding: 2px 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+      }
+      a {
+        color: inherit;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        text-decoration-color: var(--muted);
+      }
+      a:hover {
+        text-decoration-color: var(--fg);
+      }
+      body {
+        min-height: 100vh;
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+      }
+      main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      footer {
+        margin-top: auto;
+        padding-top: 80px;
+        display: flex;
+        gap: 20px;
+        font-size: 13px;
+        color: var(--muted);
+      }
+      .date {
+        color: var(--muted);
+        white-space: nowrap;
+        font-variant-numeric: tabular-nums;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Sean Noh</h1>
+        <p class="bio">Computer Science &amp; Math at Dartmouth. Working on ML and robotics.</p>
+      </header>
+
+      <section>
+        <h2>Education</h2>
+        <ul>
+          <li>Dartmouth College <span class="date">2024-2028</span></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+        <ul>
+          <li>NASA Jet Propulsion Laboratory <span class="date">2026</span></li>
+          <li>Bain &amp; Company <span class="date">2026</span></li>
+          <li>Nutanix <span class="date">2025-2026</span></li>
+          <li>City Year <span class="date">2024</span></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Awards</h2>
+        <ul>
+          <li>Stamps Scholar <span class="date">2026</span></li>
+          <li>Kemeny Computing Prize <span class="date">2026</span></li>
+          <li>Eagle Scout <span class="date">2023</span></li>
+        </ul>
+      </section>
+
+      <footer>
+        <a href="mailto:seannoh@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/seannoh/" target="_blank" rel="noopener">LinkedIn</a>
+      </footer>
+    </main>
+  </body>
+</html>
